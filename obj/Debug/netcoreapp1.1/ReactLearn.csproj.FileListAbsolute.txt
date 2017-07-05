@@ -1,0 +1,8 @@
+/Users/charles/Documents/Codes/C#.net/ReactLearn/bin/Debug/netcoreapp1.1/ReactLearn.deps.json
+/Users/charles/Documents/Codes/C#.net/ReactLearn/bin/Debug/netcoreapp1.1/ReactLearn.runtimeconfig.json
+/Users/charles/Documents/Codes/C#.net/ReactLearn/bin/Debug/netcoreapp1.1/ReactLearn.runtimeconfig.dev.json
+/Users/charles/Documents/Codes/C#.net/ReactLearn/bin/Debug/netcoreapp1.1/ReactLearn.dll
+/Users/charles/Documents/Codes/C#.net/ReactLearn/bin/Debug/netcoreapp1.1/ReactLearn.pdb
+/Users/charles/Documents/Codes/C#.net/ReactLearn/obj/Debug/netcoreapp1.1/ReactLearn.AssemblyInfo.cs
+/Users/charles/Documents/Codes/C#.net/ReactLearn/obj/Debug/netcoreapp1.1/ReactLearn.dll
+/Users/charles/Documents/Codes/C#.net/ReactLearn/obj/Debug/netcoreapp1.1/ReactLearn.pdb
