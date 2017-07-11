@@ -17,11 +17,36 @@
     <script type="text/babel">
 
         class HelloWorld extends React.Component {
+            constructor(props){
+                super(props);
+                this.state = {
+                    color: "pink"
+                };
+                this.toogleColor = this.toogleColor.bind(this);
+            }
+
+            toogleColor(){
+                if(this.state.color === "pink"){
+                    this.setState({
+                        color: "yellow"
+                    });
+                } else {
+                    this.setState({
+                        color: "pink"
+                    });
+                }
+            }
+
             render(){
+                const styleObj = {
+                    backgroundColor: this.state.color
+                };
+
                 return(
-                    <div>
+                    <div style={styleObj} >
                         <h1>Hello World!</h1>
                         <h2>{this.props.name}</h2>
+                        <button onClick={this.toogleColor}>ToggleColor</button>
                     </div>
                 );
             }
