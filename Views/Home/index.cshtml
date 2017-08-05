@@ -20,7 +20,8 @@
             constructor(props){
                 super(props);
                 this.state = {
-                    color: "pink"
+                    color: "pink",
+                    date: new Date()
                 };
                 this.toogleColor = this.toogleColor.bind(this);
             }
@@ -37,6 +38,23 @@
                 }
             }
 
+            componentDidMount(){
+                this.timerID = setInterval(
+                    () => this.tick(),1000
+                );
+            }
+
+            componentWillUnmount(){
+                clearInterval(this.timerID);
+
+            }
+
+            tick(){
+                this.setState({
+                    date: new Date()
+                });
+            }
+
             render(){
                 const styleObj = {
                     backgroundColor: this.state.color
@@ -46,6 +64,7 @@
                     <div style={styleObj} >
                         <h1>Hello World!</h1>
                         <h2>{this.props.name}</h2>
+                        <h2>It is {this.state.date.toLocaleTimeString()}. </h2>
                         <button onClick={this.toogleColor}>ToggleColor</button>
                     </div>
                 );
